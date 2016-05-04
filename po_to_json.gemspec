@@ -60,6 +60,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake"
   s.add_development_dependency "yard"
   s.add_development_dependency "rspec"
-
-  s.add_dependency "json", ">= 1.6.0"
 end

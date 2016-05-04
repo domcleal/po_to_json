@@ -5,11 +5,6 @@ rvm:
   - 2.0.0
   - 1.9.3
 
-env:
-  - JSON_VERSION=1.6.8
-  - JSON_VERSION=1.7.7
-  - JSON_VERSION=1.8.2
-
 notifications:
   email:
     recipients:

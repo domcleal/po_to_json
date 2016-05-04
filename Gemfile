@@ -26,8 +26,6 @@
 source "http://rubygems.org"
 gemspec
 
-gem "json", "~> #{ENV["JSON_VERSION"]}" if ENV["JSON_VERSION"]
-
 group :development do
   gem "guard", require: false
   gem "guard-rubocop", require: false
