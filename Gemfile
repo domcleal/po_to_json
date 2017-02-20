@@ -26,6 +26,8 @@
 source "http://rubygems.org"
 gemspec
 
+gem "rake", require: false, group: [:development, :test]
+
 group :development do
   gem "guard", require: false
   gem "guard-rubocop", require: false
@@ -37,6 +39,7 @@ group :test do
   gem "coveralls", require: false
   gem "codeclimate-test-reporter", require: false
   gem "rubocop", require: false
+  gem "rspec", require: false
 end
 
 instance_eval(File.read("Gemfile.local")) if File.exist? "Gemfile.local"

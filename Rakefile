@@ -33,8 +33,12 @@ end
 require "rubocop/rake_task"
 RuboCop::RakeTask.new
 
-require "yard"
-YARD::Rake::YardocTask.new
+begin
+  require "yard"
+  YARD::Rake::YardocTask.new
+rescue LoadError
+  # skip YARD if development bundler group isn't installed
+end
 
 require "rspec/core/rake_task"
 RSpec::Core::RakeTask.new(:spec)
